@@ -1,0 +1,184 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*--------
+ default css 
+ ----------*/
+:root{
+    --orange:#E76F51;
+} 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*-----------
+ banner section
+ --------  */
+.top-banner{
+    height: 100vh;
+    width: 100%;
+    background: #264653; 
+}   
+.header-left-content h6{ 
+    font-size: 14px; 
+    font-weight: 300;
+}
+.header-left-content h1{  
+    font-weight: 600; 
+}
+.header-left-content p{ 
+    font-weight: 300;
+    font-size: 16px; 
+}
+/* header button and main button css */
+.honda-button{  
+    font-size: 16px;
+    background:var(--orange);
+}
+/* modal title  */
+.modal-title{
+    color: var(--orange);
+}
+
+/*--------------  
+all section title  
+----------*/
+.section-title h2{ 
+    font-weight: 600;
+    font-size: 48px;
+}
+.section-title p{ 
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--orange);
+}
+.section-title hr{  
+    margin: 0 auto;
+    width: 60px;
+    height: 2px;
+    background: var(--orange);
+}
+/*----------------
+ fetured section   
+----------------------*/
+.fetured-bike-img-wrapper img{
+    width: 288px;
+}
+.grayscale-filter{
+    filter: grayscale(100%);
+}
+/*-------------
+ latest news
+ -------------- */
+.read-more-btn{
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    transition: all .3s;
+}
+.read-more-btn:hover{
+    background-color: var(--orange);
+    color: #fff;
+}
+/* -------
+ Happy client section
+ ------------  */
+.section-title h2 span{
+    color: var(--orange);
+}
+.card-img-round img{
+    width: 149px;
+    height: 149px; 
+}  
+.card-content{
+    padding: 40px 35px;
+} 
+ .rating i{
+    color:var(--orange)
+}
+.author h5{
+    color: #23A6F0;
+    font-size: 14px;
+}
+.honda-accordion-btn{
+    font-size: 20px;
+}
+.accordion-content p{
+    font-size: 16px;
+}
+/* accordian default css remove   */
+.accordion-button:not(.collapsed) {
+    color: #131313;
+    background-color: #ffffff; 
+}
+/* ----------------------------
+             contact us
+----------------- */
+ 
+.location-box i{
+    font-size:32px;
+    color: var(--orange); 
+    border:2px dotted var(--orange);
+    width: 60px;
+    height: 60px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.location-box h2{
+    font-size: 20px;
+    color:#777777;  
+}
+.location-box p{
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}  
+form .form-btn:hover{
+    background: #e35052;
+    color:white;  
+}
+
+/*-----------------------------
+  interview section style 
+ -----------------------------*/ 
+ .gallery-wrapper{
+    position:relative;
+    margin-top: 50px;
+    width: 100%;
+    height:600px; 
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); 
+ }
+ .gallery-wrapper .gallery-img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition:0.5s;
+}
+
+/* all  gallery  container clip path  */
+
+.gallery-wrapper .gallery-img.img-1{
+    background:url(../images/wal-1.jpg);
+    background-size:cover;
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+    background-position: center;
+}
+.gallery-wrapper .gallery-img.img-2{
+    background:url(../images/wal-2.jpg); 
+    background-size:cover;
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+}
+.gallery-wrapper .gallery-img.img-3{
+    background:url(../images/wal-3.jpg); 
+    background-size:cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+/* gallery container hover effect  */
+.gallery-wrapper:hover .gallery-img{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+/* gallery img  hover effect  */ 
+.gallery-wrapper .gallery-img:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+} 
